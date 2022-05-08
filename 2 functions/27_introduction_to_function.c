@@ -8,7 +8,9 @@
 // Why functions?
 // There are two important reasons of why we are using functions:
 // 1. Reusability
+//Once the function is defiend ,it can be reused over and over again.
 // 2. Abstracion
+//IF you are just using the function  in your program then you don't have to worry about how it works inside!
 
 #include <stdio.h>
 

@@ -12,13 +12,29 @@
 
 // it is not necessary to put the name of the parameter in function prototype
 
+//int fun(int var1,char var2);
+//you can also write like this 
+//int fun(int , char);
+
+
+//Is It always necessary to declare the funcions before using it?
+//not
 #include <stdio.h>
 
+
 char fun();
+
+//you can also write like it
+int fun1(){
+    return 1;
+}
+
 int main()
 {
     char c = fun();
-    printf("character is: %c", c);
+    printf("character is: %c\n", c);
+    int i = fun1();
+    printf("Integer is: %d",i);
     return 0;
 }
 

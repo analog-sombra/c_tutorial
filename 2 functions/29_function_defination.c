@@ -1,4 +1,3 @@
-// what is function defination?
 // function defination is a block of code which is used to define a function.
 
 #include <stdio.h>
