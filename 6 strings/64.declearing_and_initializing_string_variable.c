@@ -16,6 +16,15 @@ int main(void)
     // This can also do the work done
     // omitting the length
     char s2[] = "Hello";
+
+
+    char t[6];
+    int i;
+    for(i=0;s[i] != '\0';i++){
+        t[i] = s[i];
+    }
+    t[i] = '\0';
+    printf("%s",t);
     // Automatically the compiler set aside 6 character for s2 which enough to store the given string with null cahracter
     
 }

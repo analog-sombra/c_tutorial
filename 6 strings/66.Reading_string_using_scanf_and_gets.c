@@ -11,4 +11,8 @@ int main(void)
     // Like any array name, a is treated as a pointer
     // to the first element of the array. Therefore,
     // there is no need to put &
+char b;
+   b =  getc();
+    printf("%c", b);
+
 }

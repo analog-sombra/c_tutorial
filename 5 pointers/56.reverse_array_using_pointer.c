@@ -1,16 +1,27 @@
 #include <stdio.h>
-int add(int b[],int len);
+#include <stdlib.h>
 int main(int argc, char const *argv[])
 {
-    int a[] = {1,2,3,4,5,6,7,8,9,10};
-    int len = sizeof(a)/sizeof(a[0]);
-    printf("%d",add(a,len));
-    return 0;
-}
-int add(int b[],int len){
-    int sum = 0,i;
-    for(i=0;i<len;i++){
-        sum+=b[i];
+    int tmp, size, i, j, *arr;
+    printf("Enter size of array:");
+    scanf("%d", &size);
+    // allocates memory depending on size
+    arr = calloc(sizeof(int), size);
+    printf("Enter elements in array: ");
+    for (i = 0; i < size; i++)
+        scanf("%d", arr + i);
+
+    for (i = 0, j = size - 1; i < j; i++, j--)
+    {
+        // swap the elements
+        tmp = *(arr + i);
+        *(arr + i) = *(arr + j);
+        *(arr + j) = tmp;
     }
-    return sum;
+
+    printf("After reversing the array: ");
+    for (i = 0; i < size; i++)
+        printf("%d ", *(arr + i));
+
+    return 0;
 }

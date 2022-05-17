@@ -1,6 +1,6 @@
 #include <stdio.h>
 //name of an arary can be used as a pointer to the first element of an arary.
-int main(int argc, char const *argv[])
+int main()
 {
     int a[] = {3,54,65,34,23,54,6,34};
     *a = 10;
