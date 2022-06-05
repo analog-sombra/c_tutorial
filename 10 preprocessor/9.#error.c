@@ -1,10 +1,11 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
+int main()
 {
 #ifdef PI
     printf("PI is defined\n");
 #else
-    #error PI is not defined
+    // #error PI is not defined
+    #warning PI is not defined
 #endif
     return 0;
 }
