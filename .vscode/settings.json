@@ -2,6 +2,11 @@
     "files.associations": {
         "stdlib.h": "c",
         "stdio.h": "c",
-        "setjmp.h": "c"
+        "setjmp.h": "c",
+        "socket.h": "c",
+        "inet.h": "c",
+        "string.h": "c",
+        "unistd.h": "c",
+        "ftp.h": "c"
     }
 }
